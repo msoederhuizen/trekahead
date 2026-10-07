@@ -3,6 +3,9 @@
   "_brouterUrl": "Routing server base URL. MUST be https (iOS blocks plain http) and MUST NOT end in a slash. Anything malformed is ignored and the app keeps its previous value, so a typo degrades rather than breaks. Leave empty until a permanent host exists.",
   "brouterUrl": "https://routing.trekahead.app/brouter",
 
+  "_photoBaseUrl": "Where the mirrored hut photos live. The app stores KEYS and joins them to this, so the photos can move without an App Store update -- which they will: Cloudflare documents r2.dev as development-only and rate-limited, and the eventual home is a custom domain. No trailing slash. If this is wrong or missing the app falls back to the original photo URLs, so a typo is slow rather than broken.",
+  "photoBaseUrl": "https://pub-13eb04828ba045a7b9d120135c78b8e6.r2.dev",
+
   "_supportEmail": "Shown on the About screen. Changing it here changes it in every installed copy, which is the whole reason this file exists.",
   "supportEmail": "trekaheadapp@gmail.com",
 
